@@ -7,3 +7,8 @@ for USER in ${@}; do
     saludo $USER
 done
 
+#al ejecutarlo resulta lo siguiente
+amara@penguin:~$ bash ejercicio1.sh amara andrea samanta
+Hola amara
+Hola andrea
+Hola samanta

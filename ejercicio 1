@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function saludo () {
+    echo Hola $1
+}
+for USER in ${@}; do
+    saludo $USER
+done
+

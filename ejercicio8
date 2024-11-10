@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Fecha y hora actuales: $(date)"
+echo "Fecha dentro de 7 días: $(date -d "+7 days")"
+
+#resultado terminal
+amara@penguin:~$ bash ejercicio8Part2.sh
+Fecha y hora actuales: Sat Nov  9 11:33:12 PM -03 2024
+Fecha en 7 días: Sat Nov 16 11:33:12 PM -03 2024

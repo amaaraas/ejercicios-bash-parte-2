@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Ruta del directorio a respaldar
+src_dir="directorio1"
+backup_dir="respaldo$(date +%Y-%m-%d)"
+
+# Hacer copia de seguridad y comprimirla
+cp -r "$src_dir" "$backup_dir"
+tar -czf "${backup_dir}.tar.gz" "$backup_dir"
+
+# Eliminar la carpeta sin comprimir
+rm -r "$backup_dir"

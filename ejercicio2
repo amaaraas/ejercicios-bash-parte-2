@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#para listar las primeras 5 peliculas utilizamos lo siguiente
+peliculas=("peli1" "peli2" "peli3" "peli4" "peli5")
+
+for i in "${peliculas[@]}";do
+echo $i
+done
+
+#resultado terminal
+amara@penguin:~$ bash ejercicio2.sh
+peli1
+peli2
+peli3
+peli4
+peli5
+
+#ahora para listar otra pelicula solo agregamos esta linea
+peliculas+=("peli6")
+
+#resultado terminal
+amara@penguin:~$ bash ejercicio2.sh
+peli1
+peli2
+peli3
+peli4
+peli5
+peli6

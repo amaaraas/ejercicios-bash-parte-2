@@ -1,0 +1,15 @@
+#!/bin/bash
+
+peliculas=("peli1" "peli2" "peli3" "peli4" "peli5")
+
+for i in "${!peliculas[@]}";do
+echo "$i: ${peliculas[i]}"
+done
+
+#resultado terminal
+amara@penguin:~$ bash ejercicio2.sh
+0: peli1
+1: peli2
+2: peli3
+3: peli4
+4: peli5

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+filename="ejercicio.sh"
+if [ -f "$filename" ]; then
+    cat "$filename"
+else
+    echo "Error: Archivo no encontrado"
+fi
+
+#resultado terminal
+amara@penguin:~$ bash ejercicio7Part2.sh 
+Error: Archivo no encontrado
+
+#ahora al cambiar el archivo por "prueba1.sh" se mostrara su contenido
+#!/bin/bash
+filename="prueba1.sh"
+if [ -f "$filename" ]; then
+    cat "$filename"
+else
+    echo "Error: Archivo no encontrado"
+fi
+
+amara@penguin:~$ bash ejercicio7Part2.sh 
+el archivo existe

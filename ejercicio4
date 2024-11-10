@@ -1,0 +1,20 @@
+#cree el archivo email.txt con los siguientes ejemplos
+amara@penguin:~$ cat email.txt 
+
+canasamara91@gmail.com
+ejemplo#gmail,cl
+ejemplo2@valido.com
+correo#2@novalido.com
+
+#luego en otro archivo con el siguiente codigo valido los correos 
+#!/bin/bash
+
+archivo="email.txt"
+patron="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+
+grep -E "$patron" "$archivo"
+
+#resultado terminal
+amara@penguin:~$ bash ejercicio4.sh
+canasamara91@gmail.com
+ejemplo2@valido.com

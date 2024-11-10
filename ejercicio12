@@ -1,0 +1,21 @@
+#primero se creo el archivo names.txt con distintos nombres
+amara@penguin:~$ cat names.txt 
+amara
+gina
+amara
+andrea
+felipe
+felipe
+sandra
+
+#despues en un archivo nuevo se uso el siguiente comando
+amara@penguin:~$ ejercicio12Part2.sh
+sort name.txt | uniq > sorted_names.txt
+
+#para que finalmente la lista de nombres corregidos se guarden en el archivo sorted_names.txt
+amara@penguin:~$ cat sorted_names.txt                                     
+amara
+andrea
+felipe
+gina
+sandra

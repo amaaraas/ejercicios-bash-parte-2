@@ -1,0 +1,21 @@
+#como primer paso creamos el script ejercicio11Part2.sh que contiene el siguiente codigo                                   
+#!/bin/bash
+echo "$(date)" >> logfile2.txt
+
+#despues abri crontab -e donde se ejecutara lo siguiente 
+*/1 * * * * /home/amara/ejercicio11Part2.sh
+
+#finalmente ejecutamos el primer script, esperamos unos minutos para efectos de la practica y abri el archivo logfile2.txt para ver su contenido
+amara@penguin:~$ bash ejercicio11Part2.sh 
+
+#vemos que se guardaron 8 registros horarios diferentes
+amara@penguin:~$ cat logfile2.txt 
+
+Sun Nov 10 06:23:01 PM -03 2024
+Sun Nov 10 06:24:01 PM -03 2024
+Sun Nov 10 06:25:01 PM -03 2024
+Sun Nov 10 06:26:01 PM -03 2024
+Sun Nov 10 06:27:01 PM -03 2024
+Sun Nov 10 06:28:02 PM -03 2024
+Sun Nov 10 06:29:01 PM -03 2024
+Sun Nov 10 06:30:01 PM -03 2024
